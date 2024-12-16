@@ -27,16 +27,16 @@ int main() {
     scanf("%d", &B);
     printf("Hai inserito il valore B: %d\n", B);
     printf("Inserisci il valore di C (0 o 1):\n");
-    scanf("%d", &A);
+    scanf("%d", &C);
     printf("Hai inserito il valore C: %d\n", C);
     printf("Inserisci il valore di D (0 o 1):\n");
-    scanf("%d", &B);
-    printf("Hai inserito il valore D: %d\n", B);
+    scanf("%d", &D);
+    printf("Hai inserito il valore D: %d\n", D);
     printf("Inserisci il valore di E (0 o 1):\n");
-    scanf("%d", &A);
+    scanf("%d", &E);
     printf("Hai inserito il valore E: %d\n", E);
     printf("Inserisci il valore di F (0 o 1):\n");
-    scanf("%d", &B);
+    scanf("%d", &F);
     printf("Hai inserito il valore F: %d\n", F);
     
     if (A != 0 && A != 1 && B != 0 && B != 1) {
