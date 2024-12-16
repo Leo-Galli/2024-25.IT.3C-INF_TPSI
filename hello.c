@@ -1,23 +1,23 @@
 #include <stdio.h>
 
 // Funzione per simulare la porta NOT
-int NOT(int a) {
+int NOT(int A) {
     // Il valore di ritorno della funzione
-    return 1 - a;
+    return 1 - A;
 }
 
 // Funzione per simulare la porta AND
-int AND(int a, int B) {
+int AND(int A, int B) {
     // Il valore di ritorno della funzione
     // TODO aggiungere l'espressione matematica per soddisfare la porta AND
-    return 1337;
+    return A*B;
 }
 
 // Funzione per simulare la porta OR
-int OR(int a, int B) {
+int OR(int A, int B) {
     // Il valore di ritorno della funzione
     // TODO aggiungere l'espressione matematica per soddisfare la porta OR
-    return 1337;
+    return (1-(1-A)*(1-B));
 }
 
 int main() {
@@ -58,6 +58,8 @@ int main() {
         printf("I valori di A e B vengono trasformati da una porta OR\n");
         int orAB = OR(A, B);
         printf("Il valore di uscita della porta OR è: %d\n", orAB);
+        int Bonus = NOT(AND(A, OR(A, B)));
+        printf("Il valore di uscita della funzione NOT(AND(A, OR(A, B))) è: %d\n", Bonus);
     }
 
     printf("\n\n");
