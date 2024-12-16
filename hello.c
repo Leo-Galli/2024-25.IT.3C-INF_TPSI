@@ -20,23 +20,30 @@ int OR(int A, int B) {
 int main() {
     // Dichiara una variabile
     int A, B, C, D, E, F;
-    // Mostra un messaggio sul terminale che l'utente può leggere
     printf("Inserisci il valore di A (0 o 1):\n");
-    // Attende che l'utente inserisca un valore e prema invio
     scanf("%d", &A);
-    // Mostra un messaggio sul terminale che l'utente può leggere
     printf("Hai inserito il valore A: %d\n", A);
-    // Mostra un messaggio sul terminale che l'utente può leggere
     printf("Inserisci il valore di B (0 o 1):\n");
-    // Attende che l'utente inserisca un valore e prema invio
     scanf("%d", &B);
-    // Mostra un messaggio sul terminale che l'utente può leggere
     printf("Hai inserito il valore B: %d\n", B);
+    printf("Inserisci il valore di C (0 o 1):\n");
+    scanf("%d", &A);
+    printf("Hai inserito il valore C: %d\n", C);
+    printf("Inserisci il valore di D (0 o 1):\n");
+    scanf("%d", &B);
+    printf("Hai inserito il valore D: %d\n", B);
+    printf("Inserisci il valore di E (0 o 1):\n");
+    scanf("%d", &A);
+    printf("Hai inserito il valore E: %d\n", E);
+    printf("Inserisci il valore di F (0 o 1):\n");
+    scanf("%d", &B);
+    printf("Hai inserito il valore F: %d\n", F);
+    
     if (A != 0 && A != 1 && B != 0 && B != 1) {
         printf("I valori inseriti non sono 1 o 0\n");
     } else {
         // Procediamo con l'esecuzione solo se il numero è 1 o 0
-        printf("I valori inseriti sono 1 o 0\n");
+/*       printf("I valori inseriti sono 1 o 0\n");
         // Esempio di porta NOT
         printf("Il valore di A viene trasformato da una porta NOT\n");
         int notA = NOT(A);
@@ -51,9 +58,20 @@ int main() {
         printf("Il valore di uscita della porta OR è: %d\n", orAB);
         int Bonus = NOT(AND(A, OR(A, B)));
         printf("Il valore di uscita della funzione NOT(AND(A, OR(A, B))) è: %d\n", Bonus);
+*/
+        int x1 = OR(A, (NOT(A)));
+        int x2 = OR(D, (NOT(D)));
+        int x3 = OR(E, (NOT(E)));
+        int x4 = OR(F, (NOT(F)));
+        int x5 = OR(B, (NOT(B)));
+        int x6 = OR(C, (NOT(C)));
+        int y1 = OR(x1, x2);
+        int y2 = OR(x3, x4);
+        int y3 = OR(x5, x6);
+        int z1 = AND(y1, y2);
+        int tautologia = AND(z1, y3);
 
-        int Tautologia = ((((NOT(A), OR(A)), OR(NOT(D), OR(D))), AND((NOT(E), OR(E)), OR (NOT(F), OR(F)))), AND((NOT(B), OR(B)), OR(NOT(C), OR(C))))  
-
+        printf("Il valore della tautologia di cui è allegata l'immagine è: %d\n", tautologia);
     }
     printf("\n\n");
 }
