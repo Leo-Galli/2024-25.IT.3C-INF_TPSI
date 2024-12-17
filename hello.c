@@ -39,7 +39,7 @@ int main() {
     scanf("%d", &F);
     printf("Hai inserito il valore F: %d\n", F);
     
-    if (A != 0 && A != 1 && B != 0 && B != 1) {
+    if (A != 0 && A != 1 && B != 0 && B != 1 && C != 0 && C != 1 && D != 0 && D != 1 && E != 0 && E != 1 && F != 0 && F != 1) {
         printf("I valori inseriti non sono 1 o 0\n");
     } else {
         // Procediamo con l'esecuzione solo se il numero è 1 o 0
