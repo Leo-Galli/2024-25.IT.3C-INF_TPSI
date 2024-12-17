@@ -59,7 +59,8 @@ int main() {
         int Bonus = NOT(AND(A, OR(A, B)));
         printf("Il valore di uscita della funzione NOT(AND(A, OR(A, B))) è: %d\n", Bonus);
 
-// Labirinto Calcolo
+/* Labirinto Calcolo Variabili con la prorpia risoluzione parziale
+ con l'obbiettivo con la variabile "tautologia" ad arrivare al risultato finale sperato */
 
         int x1 = OR(A, (NOT(A)));
         int x2 = OR(D, (NOT(D)));
@@ -73,7 +74,7 @@ int main() {
         int z1 = AND(y1, y2);
         int tautologia = AND(z1, y3);
 
-        printf("Il valore della tautologia di cui è allegata l'immagine è: %d\n", tautologia);
+        printf("Il valore della tautologia di cui è allegata l'immagine è: %d\n", tautologia); // print finale per stampa risultato es. 4
     }
     printf("\n\n");
 }
