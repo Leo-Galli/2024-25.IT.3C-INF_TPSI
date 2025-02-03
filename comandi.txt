@@ -1,0 +1,15 @@
+                                                                --------------------------------
+                                                                |    COMANDI LINUX TRATTATI    |
+                                                                |                              |
+ --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ | cat nomefile.estensione       | Restituisce il contenuto del file                                                                                                      |
+ | clear                         | pulire il terminale                                                                                                                    |
+ | ls -lh                        | restituisce tutti i files e cartelle con permessi, chi le ha create e modificate, la data e l'orario                                   |
+ | ls -lha                       | restituisce tutti i files e cartelle con permessi, chi le ha create e modificate, la data e l'orario (pure files e cartelle nascoste)  |
+ | whoami                        | restituisce il nome utente                                                                                                             |
+ | alias quellochevoglio=comando | cambia il comando originale con un altro nome mantenendo le funzioni del precedente comando                                            |
+ | ls                            | restituisce la lista dei vari files e cartelle                                                                                         |
+ | sudo su                       | rende amministratore, richiede password                                                                                                |
+ | cd                            | porta nella directory indicata                                                                                                         |
+ --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 

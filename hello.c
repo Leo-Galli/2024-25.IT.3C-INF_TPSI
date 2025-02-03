@@ -1,3 +1,10 @@
+/*
+ -------------------------------
+ | 2024-25.IT.3C-INF_TPSI      |
+ | Ultima Mofifica: 03/02/2025 |
+ -------------------------------
+          By Leo-Galli
+*/
 #include <stdio.h>
 
 // Funzione per simulare la porta NOT
